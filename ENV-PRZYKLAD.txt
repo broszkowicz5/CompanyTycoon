@@ -1,0 +1,5 @@
+# Wpisz zmienne w Netlify > Site configuration > Environment variables, nie do plików gry!
+# NIE wpisuj rzeczywistego klucza do tego pliku ani nie publikuj go w repozytorium.
+EODHD_API_TOKEN=TU_KLUCZ_Z_TWOJEGO_KONTA
+# Ustaw yes DOPIERO po uzyskaniu prawa do publicznego wyświetlania danych:
+REAL_MARKET_DATA_LICENSE_CONFIRMED=no

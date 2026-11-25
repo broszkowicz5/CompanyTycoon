@@ -1,0 +1,48 @@
+/* Zewnętrzny arkusz wyłącznie dla modułu Real Market 3.0 */
+.real-disclaimer{border:1px solid #416479;background:linear-gradient(115deg,rgba(34,87,95,.25),rgba(15,31,50,.7));border-radius:13px;padding:13px 18px;margin-bottom:18px;color:#c4e6ea;font-size:13px}
+.real-disclaimer strong{color:#f5ffff}
+.real-toolbar{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:18px}
+.real-toolbar .btn{margin-left:auto}
+.real-notice{margin-bottom:16px}
+.real-metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-bottom:20px}
+.real-grid{display:grid;grid-template-columns:minmax(210px,0.9fr) minmax(380px,2.2fr) minmax(250px,1.12fr);gap:18px;align-items:start}
+.real-grid .panel{min-width:0}
+.real-list{max-height:560px;overflow:auto;margin-top:13px;padding-right:2px}
+.real-list-item,.real-watch-row{display:flex;align-items:center;justify-content:space-between;width:100%;padding:11px 10px;border:1px solid transparent;background:transparent;color:var(--text);border-radius:11px;text-align:left;gap:8px}
+.real-list-item:hover,.real-watch-row:hover{background:rgba(94,140,216,.12);border-color:rgba(94,140,216,.22)}
+.real-list-item.active{background:rgba(73,166,203,.13);border-color:rgba(85,197,204,.38)}
+.real-list-item span{display:grid;gap:1px;min-width:0}
+.real-list-item span:last-child{align-items:end;text-align:right}
+.real-list-item strong{font-size:13px}
+.real-list-item b{font-size:13px;white-space:nowrap}
+.real-list-item small{font-size:10px;color:var(--muted);max-width:110px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.real-switch{display:flex;gap:5px;margin-bottom:16px;padding:4px;background:rgba(7,16,30,.8);border:1px solid var(--line);border-radius:10px}
+.real-switch button{flex:1;background:transparent;border:0;color:var(--muted);padding:9px 7px;border-radius:8px;font-weight:700;font-size:12px}
+.real-switch button.active{color:white;background:#2b4365;box-shadow:0 3px 9px #0003}
+.real-price-row{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:8px}
+.real-price-row>div{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap}
+.real-price-row strong{font-size:clamp(21px,2vw,30px);letter-spacing:-.7px}
+.real-ranges{display:flex;flex-wrap:wrap;gap:5px;align-items:center;margin:15px 0 10px}
+.real-ranges button:not(.btn){border:1px solid var(--line);background:var(--surface2);color:var(--muted);font-weight:700;font-size:11px;border-radius:7px;padding:6px 10px}
+.real-ranges button.active{color:white!important;background:#315b7b!important;border-color:#578aa4!important}
+.real-ranges .btn{margin-left:auto}
+.real-chart{height:245px;width:100%;background:linear-gradient(180deg,rgba(31,87,101,.16),transparent);border:1px solid rgba(73,124,161,.16);border-radius:12px;padding:9px;overflow:hidden}
+.real-chart svg{width:100%;height:100%;overflow:visible}
+.real-chart .stock-axis-label{font-size:11px;fill:#9aabc5}
+.real-chart-empty{height:245px;background:rgba(24,39,62,.46);border:1px dashed #34516e;border-radius:12px;display:grid;place-items:center;text-align:center;color:var(--muted);font-size:13px;padding:28px}
+.real-facts{display:flex;flex-wrap:wrap;gap:9px 22px;margin-top:13px;color:var(--muted);font-size:12px}
+.real-facts b{color:#d6eafa}
+.real-trade-col .form-input{margin:6px 0 15px}
+.real-trade-col .btn[data-action="real-trade"]{width:100%;margin-top:17px}
+.real-help{border-radius:9px;background:rgba(80,135,171,.12);padding:10px;color:var(--muted);font-size:11px;margin-top:13px}
+.real-watch-row{border-bottom:1px solid var(--line-soft);border-radius:0;font-size:12px}
+.real-watch-row span{color:var(--muted)}
+.real-main .section-space{margin-top:18px}
+.real-main .table-wrap{overflow-x:auto}
+.real-company-list{position:sticky;top:16px}
+@media(max-width:1450px){.real-grid{grid-template-columns:minmax(200px,1fr) minmax(370px,2.2fr)}.real-trade-col{grid-column:2;grid-row:2}.real-company-list{grid-row:1/span 2}}
+@media(max-width:1000px){.real-grid{grid-template-columns:1fr 1.25fr}.real-trade-col{grid-column:1/-1;grid-row:auto;display:grid;grid-template-columns:1fr 1fr;gap:14px}.real-company-list{position:static;grid-row:auto}.real-trade-col .section-space{margin-top:0}}
+@media(max-width:730px){.real-grid{grid-template-columns:1fr}.real-company-list{grid-row:auto}.real-list{max-height:245px}.real-trade-col{grid-column:auto;display:block}.real-trade-col .section-space{margin-top:16px}.real-toolbar .btn{margin-left:0}.real-price-row strong{font-size:24px}}
+
+@media(max-width:1100px){.real-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.real-metrics{grid-template-columns:1fr}}

@@ -1,0 +1,63 @@
+/* Żyjące biuro 2D — moduł Etap A, styl spójny z oryginalną grą */
+.office-kpi-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-bottom:20px}
+.office-playground{display:grid;grid-template-columns:minmax(0,1fr) 335px;align-items:start;gap:18px}
+.office-playground .panel{min-width:0}
+.office-world-panel{padding:22px!important;overflow:hidden}
+.office-world-head{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.office-world-head .panel-head{margin-bottom:12px}
+.office-zoom{display:flex;align-items:center;gap:4px;border:1px solid #2c4260;border-radius:10px;background:#111d32;padding:3px}
+.office-zoom-button{color:#9db6cc;background:none;border:0;padding:6px 9px;font-size:12px;border-radius:7px}
+.office-zoom-button.active{background:#35628a;color:#fff;font-weight:700}
+.office-tools{display:flex;flex-wrap:wrap;gap:7px;margin:0 0 12px}
+.office-tool{border:1px solid #2f455e;color:#9eb1ca;background:#14243a;padding:9px 13px;border-radius:10px;font-size:12px;font-weight:650;transition:background .12s,color .12s}
+.office-tool:hover,.office-tool.active{background:linear-gradient(135deg,#285ea0,#217b8b);color:#fff;border-color:#4e95ba}
+.office-hint{border:1px solid #204a5e;background:rgba(24,109,134,.13);color:#b7ddea;padding:10px 13px;border-radius:10px;font-size:12px;margin:0 0 13px;min-height:39px}
+.office-hint strong{color:#f5f9ff}
+.office-scroll{overflow:auto;max-width:100%;border:1px solid #2d4f5c;border-radius:15px;background:radial-gradient(circle at 35% 10%,#193f4b,#0b1b2a);box-shadow:inset 0 2px 20px rgba(0,0,0,.2)}
+#office-canvas{display:block;cursor:crosshair;max-width:none;image-rendering:auto;touch-action:pan-x pan-y}
+.office-legend{display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding:13px 2px 0;font-size:11px;color:#a7c1d1}
+.office-legend span{display:flex;align-items:center;gap:7px}
+.office-dot{width:9px;height:9px;border-radius:50%;display:inline-block}
+.office-dot.working{background:#35d4b2}.office-dot.free{background:#e4a34b}.office-dot.break{background:#7e94ff}
+.office-side{display:flex;flex-direction:column;gap:16px;min-width:0}
+.office-side .panel{padding:18px!important}
+.office-side .panel-head{margin-bottom:12px}
+.office-side h2{font-size:16px}
+.office-shop{display:flex;flex-direction:column;gap:7px;max-height:425px;overflow:auto;padding-right:3px}
+.office-shop-item{display:flex;align-items:center;gap:10px;text-align:left;border:1px solid #2a3e55;background:#152237;border-radius:11px;padding:10px 9px;width:100%;color:#f0f6ff;transition:border-color .14s,background .14s,transform .14s}
+.office-shop-item:hover{transform:translateY(-1px);background:#20324a;border-color:#5488bc}
+.office-shop-item.selected{background:#1d4b63;border-color:#4addc7}
+.shop-emoji{font-size:25px;width:32px;flex:none;text-align:center}
+.shop-copy{display:flex;flex-direction:column;min-width:0;flex:1}
+.shop-copy b{font-size:12px}
+.shop-copy small{font-size:10px;color:#97b2c4;line-height:1.4}
+.office-shop-item strong{font-size:11px;color:#62d8c4;white-space:nowrap;flex:none}
+.office-team-list{max-height:320px;overflow:auto;display:flex;flex-direction:column;gap:6px}
+.office-member{display:flex;align-items:center;gap:9px;width:100%;text-align:left;color:#d5e7fa;border:1px solid #263e55;border-radius:10px;background:#111f34;padding:8px 7px}
+.office-member:hover{border-color:#5279a4}
+.office-member.active{background:#193e53;border-color:#48cdb9}
+.office-avatar{display:grid;place-items:center;width:31px;height:31px;border-radius:10px;background:#2b526a;color:#bceef9;font-weight:800;flex:none}
+.office-member>span:nth-child(2){display:flex;flex-direction:column;min-width:0;flex:1}
+.office-member b{font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.office-member small{font-size:10px;color:#9db2c6;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.office-member em{font-size:10px;font-style:normal;white-space:nowrap}
+.office-selected-card{display:flex;gap:14px;align-items:flex-start;background:#17283b;border:1px solid #2b4555;border-radius:10px;padding:12px}
+.office-selected-card>span{font-size:29px}
+.office-selected-card>div{display:flex;flex-direction:column;gap:3px}
+.office-selected-card b{font-size:13px}
+.office-selected-card small{color:#a4bdd2;font-size:11px}
+.office-explainer{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}
+.office-explainer>div{border:1px solid #2a3c51;background:#152338;border-radius:12px;padding:15px}
+.office-explainer strong{font-size:14px;color:#dce9ff}
+.office-explainer p{font-size:12px;margin:7px 0 0}
+@media(max-width:1250px){.office-playground{grid-template-columns:minmax(0,1fr) 290px}.office-kpi-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.office-world-panel{padding:16px!important}.office-side .panel{padding:13px!important}}
+@media(max-width:1030px){.office-playground{grid-template-columns:minmax(0,1fr)}.office-side{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:start}.office-side>.panel:last-child{grid-column:1/-1}}
+@media(max-width:710px){.office-kpi-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.office-playground{gap:12px}.office-tools{gap:5px}.office-tool{padding:8px 9px}.office-side{grid-template-columns:minmax(0,1fr)}.office-side>.panel:last-child{grid-column:auto}.office-world-panel{padding:12px!important}.office-legend{gap:8px}.office-explainer{grid-template-columns:1fr}.office-world-head{gap:10px}.office-hint{font-size:11px}}
+@media(max-width:440px){.office-kpi-grid{grid-template-columns:1fr 1fr}.office-kpi-grid .metric{padding:12px 10px}.office-kpi-grid .metric-value{font-size:18px}}
+
+.office-zones{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px}
+.office-zone-chip{background:#142639;color:#9eb9d0;border:1px solid #2c4558;border-radius:9px;padding:6px 8px;display:flex;align-items:center;gap:6px;font-size:11px}
+.office-zone-chip i{width:10px;height:10px;border-radius:3px;border:1px solid rgba(210,240,255,.25)}
+.office-zone-chip:hover,.office-zone-chip.active{border-color:#5ee4d3;background:#1b4d5f;color:#f3fff9}
+.office-renovate{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.office-renovate p{margin:5px 0 0}
